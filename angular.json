@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/todomvc-app-css/index.css"
             ],
             "scripts": []
           },
@@ -49,6 +50,19 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "storybook": {
+              "builder": "@storybook/angular:start-storybook",
+              "options": {
+                "browserTarget": "angular-cli:build",
+                "port": 6006
+              }
+            },
+            "build-storybook": {
+              "builder": "@storybook/angular:build-storybook",
+              "options": {
+                "browserTarget": "angular-cli:build"
+              }
             },
             "development": {
               "buildOptimizer": false,

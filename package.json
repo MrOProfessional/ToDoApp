@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "compodoc": "npx compodoc -p tsconfig.doc.json"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,12 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@compodoc/compodoc": "^1.1.19",
+    "@ngrx/store": "^15.0.0",
+    "@ngrx/store-devtools": "^15.0.0",
     "rxjs": "~7.5.0",
+    "storybook": "^6.5.14",
+    "todomvc-app-css": "^2.4.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
